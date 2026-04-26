@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>Welcome | Tatamiberry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100%;background:linear-gradient(160deg,#fff5f8 0%,#fef0f5 50%,#fff8f0 100%)}
+body{font-family:'Georgia','Noto Serif JP',serif;display:flex;justify-content:center}
+.page{width:100%;max-width:430px;min-height:100vh;position:relative;padding:0 0 60px;overflow:hidden;display:flex;flex-direction:column;align-items:center}
+
+/* ── deco petals ── */
+.petal{position:absolute;opacity:0.20;pointer-events:none}
+.p1{top:3%;left:4%;font-size:28px}.p2{top:6%;right:6%;font-size:22px}
+.p3{top:16%;left:2%;font-size:18px}.p4{top:25%;right:3%;font-size:24px}
+.p5{bottom:30%;left:5%;font-size:20px}.p6{bottom:20%;right:4%;font-size:26px}
+.p7{bottom:10%;left:8%;font-size:16px}.p8{top:42%;left:1%;font-size:14px}
+
+/* ── header ── */
+header{width:100%;display:flex;align-items:center;justify-content:center;padding:24px 22px 10px;position:relative}
+.logo{font-size:18px;font-weight:bold;color:#c0306a;letter-spacing:0.5px;display:flex;align-items:center;gap:7px}
+.logo span{font-size:24px}
+
+/* ── hero area ── */
+.hero{text-align:center;padding:18px 30px 10px;width:100%}
+.welcome-label{font-size:13px;color:#e08090;letter-spacing:3px;text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-size:34px;font-weight:bold;color:#c0306a;line-height:1.2;margin-bottom:8px}
+.hero h1 span{display:block;font-size:28px}
+.hero .brand-em{font-size:20px;color:#d06080;font-style:italic;margin-bottom:0}
+
+/* ── decorative line ── */
+.deco-line{color:#e0a0b0;font-size:13px;letter-spacing:6px;margin:16px 0}
+
+/* ── message card ── */
+.msg-card{background:white;border-radius:20px;padding:22px 28px;margin:0 20px;box-shadow:0 4px 20px rgba(192,48,106,0.10);text-align:center;width:calc(100% - 40px)}
+.msg-card .line1{font-size:16px;color:#5a3848;line-height:1.7;margin-bottom:10px}
+.msg-card .line2{font-size:17px;font-weight:bold;color:#c0306a;line-height:1.6}
+.msg-card .line3{font-size:14px;color:#a07888;margin-top:12px;font-style:italic}
+
+/* ── character ── */
+.character-wrap{position:relative;width:100%;text-align:center;margin-top:10px}
+.character-wrap img{width:160px;height:auto;mix-blend-mode:multiply;display:inline-block}
+
+/* ── CTA button ── */
+.cta-wrap{text-align:center;margin-top:4px;padding:0 30px;width:100%}
+.cta-btn{display:inline-block;width:100%;background:linear-gradient(135deg,#e0406a,#c0306a);color:white;font-size:17px;font-weight:bold;padding:16px 0;border-radius:50px;letter-spacing:1px;text-decoration:none;box-shadow:0 6px 20px rgba(192,48,106,0.35);transition:transform 0.15s,box-shadow 0.15s;cursor:pointer;border:none;font-family:inherit}
+.cta-btn:active{transform:scale(0.97);box-shadow:0 3px 12px rgba(192,48,106,0.25)}
+.cta-sub{font-size:12px;color:#d08090;margin-top:10px;letter-spacing:1px}
+
+/* ── footer ── */
+footer{text-align:center;color:#d0a0b0;font-size:11px;margin-top:18px;letter-spacing:1px;padding:0 20px}
+</style>
+</head>
+<body>
+<div class="page">
+  <!-- deco petals -->
+  <div class="petal p1">🌸</div>
+  <div class="petal p2">✿</div>
+  <div class="petal p3">🌸</div>
+  <div class="petal p4">🌸</div>
+  <div class="petal p5">✿</div>
+  <div class="petal p6">🌸</div>
+  <div class="petal p7">🌸</div>
+  <div class="petal p8">✿</div>
+
+  <header>
+    <div class="logo"><span>🍓</span>Tatamiberry</div>
+  </header>
+
+  <div class="hero">
+    <p class="welcome-label">✦ &nbsp; Welcome &nbsp; ✦</p>
+    <h1>Welcome to<span>Tatamiberry</span></h1>
+  </div>
+
+  <div class="deco-line">— 🌸 —</div>
+
+  <div class="msg-card">
+    <p class="line1">Thank you for joining<br>this special experience.</p>
+    <p class="line2">Remember the pattern<br>you chose? ✦</p>
+    <p class="line3">Let's discover its meaning together</p>
+  </div>
+
+  <div class="character-wrap">
+    <img src="hanarin_smile.png" alt="Hanarin-chan" onerror="this.style.display='none'">
+  </div>
+
+  <div class="cta-wrap">
+    <a class="cta-btn" href="select.html">✦ &nbsp; Choose Your Pattern &nbsp; ✦</a>
+    <p class="cta-sub">Tap to discover your pattern's story</p>
+  </div>
+
+  <footer>
+    <p>© Tatamiberry &nbsp;·&nbsp; Handmade with love 🌸</p>
+  </footer>
+</div>
+</body>
+</html>

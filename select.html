@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>Select Your Pattern | Tatamiberry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100%;background:linear-gradient(160deg,#fff5f8 0%,#fef0f5 50%,#fff8f0 100%)}
+body{font-family:'Georgia','Noto Serif JP',serif;display:flex;justify-content:center}
+.page{width:100%;max-width:430px;min-height:100vh;position:relative;padding:0 0 60px;overflow:hidden}
+
+/* ── deco petals ── */
+.petal{position:absolute;opacity:0.18;pointer-events:none}
+.p1{top:3%;left:4%;font-size:22px}.p2{top:7%;right:5%;font-size:18px}
+.p3{bottom:25%;right:3%;font-size:20px}.p4{bottom:15%;left:5%;font-size:16px}
+
+/* ── header ── */
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 22px 10px}
+.logo{font-size:16px;font-weight:bold;color:#c0306a;letter-spacing:0.5px;display:flex;align-items:center;gap:6px}
+.logo span{font-size:20px}
+.back-btn{font-size:12px;color:#d08090;text-decoration:none;padding:5px 12px;border:1px solid #f0b0c0;border-radius:20px;letter-spacing:0.5px}
+
+/* ── title ── */
+.page-title{text-align:center;padding:10px 20px 6px}
+.page-title p{font-size:13px;color:#e08090;letter-spacing:3px;text-transform:uppercase;margin-bottom:10px}
+.page-title h2{font-size:22px;color:#c0306a;font-weight:bold;line-height:1.3}
+
+/* ── deco line ── */
+.deco-line{text-align:center;color:#e0a0b0;font-size:12px;letter-spacing:5px;margin:12px 0 16px}
+
+/* ── pattern list ── */
+.pattern-list{padding:0 18px;display:flex;flex-direction:column;gap:12px}
+
+.pattern-card{display:flex;align-items:center;gap:14px;background:white;border-radius:16px;padding:14px 18px;box-shadow:0 2px 14px rgba(192,48,106,0.08);text-decoration:none;transition:transform 0.15s,box-shadow 0.15s;position:relative;overflow:hidden}
+.pattern-card:active{transform:scale(0.97);box-shadow:0 1px 8px rgba(0,0,0,0.08)}
+.pattern-card::after{content:'›';position:absolute;right:18px;font-size:22px;color:#e0b0c0;font-weight:bold}
+
+/* color accent left border */
+.pattern-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:16px 0 0 16px}
+.card-seigaiha::before{background:#1a6fa0}
+.card-asanoha::before{background:#2d7a3a}
+.card-shippo::before{background:#8b1a8b}
+.card-ichimatsu::before{background:#7050b8}
+.card-sakura::before{background:#c0306a}
+
+/* icon circle */
+.icon-circle{width:54px;height:54px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.icon-circle svg{width:100%;height:100%}
+
+/* text */
+.card-text{flex:1}
+.card-name-en{font-size:18px;font-weight:bold;letter-spacing:0.5px;line-height:1.1}
+.card-name-ja{font-size:13px;letter-spacing:2px;margin-top:2px;opacity:0.75}
+.card-hint{font-size:11px;color:#b09098;margin-top:4px;font-style:italic}
+
+.card-seigaiha .card-name-en{color:#1a6fa0}
+.card-seigaiha .card-name-ja{color:#3a8fc0}
+.card-asanoha .card-name-en{color:#2d7a3a}
+.card-asanoha .card-name-ja{color:#4d9a5a}
+.card-shippo .card-name-en{color:#8b1a8b}
+.card-shippo .card-name-ja{color:#ab3aab}
+.card-ichimatsu .card-name-en{color:#7050b8}
+.card-ichimatsu .card-name-ja{color:#9070c8}
+.card-sakura .card-name-en{color:#c0306a}
+.card-sakura .card-name-ja{color:#d05080}
+
+/* ── character + subtitle ── */
+.bottom-area{text-align:center;padding:16px 20px 0;position:relative}
+.bottom-area img{width:130px;height:auto;mix-blend-mode:multiply;display:inline-block}
+.choose-hint{font-size:13px;color:#d08090;font-style:italic;margin-top:6px;letter-spacing:0.5px}
+
+/* ── footer ── */
+footer{text-align:center;color:#d0a0b0;font-size:11px;margin-top:14px;letter-spacing:1px;padding:0 20px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="petal p1">🌸</div>
+  <div class="petal p2">✿</div>
+  <div class="petal p3">🌸</div>
+  <div class="petal p4">✿</div>
+
+  <header>
+    <div class="logo"><span>🍓</span>Tatamiberry</div>
+    <a class="back-btn" href="index.html">← Back</a>
+  </header>
+
+  <div class="page-title">
+    <p>✦ &nbsp; Your Pattern &nbsp; ✦</p>
+    <h2>Please select<br>your pattern 🌸</h2>
+  </div>
+
+  <div class="deco-line">— ✦ —</div>
+
+  <div class="pattern-list">
+
+    <!-- 青海波 -->
+    <a class="pattern-card card-seigaiha" href="seigaiha.html">
+      <div class="icon-circle">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gs"><stop offset="0%" stop-color="#5aafd0"/><stop offset="100%" stop-color="#1a6fa0"/></radialGradient>
+            <clipPath id="cs"><circle cx="50" cy="50" r="50"/></clipPath>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="url(#gs)"/>
+          <g clip-path="url(#cs)" fill="none" stroke="white" stroke-width="2.5" opacity="0.85">
+            <path d="M-10,70 Q5,50 20,70 Q35,90 50,70 Q65,50 80,70 Q95,90 110,70"/>
+            <path d="M-10,50 Q5,30 20,50 Q35,70 50,50 Q65,30 80,50 Q95,70 110,50"/>
+            <path d="M-10,30 Q5,10 20,30 Q35,50 50,30 Q65,10 80,30 Q95,50 110,30"/>
+            <path d="M-10,90 Q5,70 20,90 Q35,110 50,90 Q65,70 80,90 Q95,110 110,90"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-text">
+        <div class="card-name-en">Seigaiha</div>
+        <div class="card-name-ja">青海波</div>
+        <div class="card-hint">Wave of Blue Sea</div>
+      </div>
+    </a>
+
+    <!-- 麻の葉 -->
+    <a class="pattern-card card-asanoha" href="asanoha.html">
+      <div class="icon-circle">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="ga"><stop offset="0%" stop-color="#60b870"/><stop offset="100%" stop-color="#2d7a3a"/></radialGradient>
+            <clipPath id="ca"><circle cx="50" cy="50" r="50"/></clipPath>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="url(#ga)"/>
+          <g clip-path="url(#ca)" stroke="white" stroke-width="2" opacity="0.85" fill="none">
+            <line x1="50" y1="10" x2="50" y2="90"/>
+            <line x1="10" y1="50" x2="90" y2="50"/>
+            <line x1="19" y1="19" x2="81" y2="81"/>
+            <line x1="81" y1="19" x2="19" y2="81"/>
+            <line x1="50" y1="10" x2="19" y2="60"/>
+            <line x1="50" y1="10" x2="81" y2="60"/>
+            <line x1="50" y1="90" x2="19" y2="40"/>
+            <line x1="50" y1="90" x2="81" y2="40"/>
+            <line x1="10" y1="50" x2="60" y2="19"/>
+            <line x1="10" y1="50" x2="60" y2="81"/>
+            <line x1="90" y1="50" x2="40" y2="19"/>
+            <line x1="90" y1="50" x2="40" y2="81"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-text">
+        <div class="card-name-en">Asanoha</div>
+        <div class="card-name-ja">麻の葉</div>
+        <div class="card-hint">Hemp Leaf</div>
+      </div>
+    </a>
+
+    <!-- 七宝 -->
+    <a class="pattern-card card-shippo" href="shippo.html">
+      <div class="icon-circle">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gsh"><stop offset="0%" stop-color="#c060c0"/><stop offset="100%" stop-color="#8b1a8b"/></radialGradient>
+            <clipPath id="csh"><circle cx="50" cy="50" r="50"/></clipPath>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="url(#gsh)"/>
+          <g clip-path="url(#csh)" fill="none" stroke="white" stroke-width="2.5" opacity="0.85">
+            <circle cx="50" cy="50" r="30"/>
+            <circle cx="20" cy="50" r="30"/>
+            <circle cx="80" cy="50" r="30"/>
+            <circle cx="50" cy="20" r="30"/>
+            <circle cx="50" cy="80" r="30"/>
+            <circle cx="20" cy="20" r="30"/>
+            <circle cx="80" cy="20" r="30"/>
+            <circle cx="20" cy="80" r="30"/>
+            <circle cx="80" cy="80" r="30"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-text">
+        <div class="card-name-en">Shippo</div>
+        <div class="card-name-ja">七宝</div>
+        <div class="card-hint">Seven Treasures</div>
+      </div>
+    </a>
+
+    <!-- 市松 -->
+    <a class="pattern-card card-ichimatsu" href="ichimatsu.html">
+      <div class="icon-circle">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gi"><stop offset="0%" stop-color="#9878d0"/><stop offset="100%" stop-color="#7050b8"/></radialGradient>
+            <clipPath id="ci"><circle cx="50" cy="50" r="50"/></clipPath>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="url(#gi)"/>
+          <g clip-path="url(#ci)" opacity="0.85">
+            <rect x="0" y="0" width="25" height="25" fill="white"/>
+            <rect x="25" y="25" width="25" height="25" fill="white"/>
+            <rect x="50" y="0" width="25" height="25" fill="white"/>
+            <rect x="75" y="25" width="25" height="25" fill="white"/>
+            <rect x="0" y="50" width="25" height="25" fill="white"/>
+            <rect x="25" y="75" width="25" height="25" fill="white"/>
+            <rect x="50" y="50" width="25" height="25" fill="white"/>
+            <rect x="75" y="75" width="25" height="25" fill="white"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-text">
+        <div class="card-name-en">Ichimatsu</div>
+        <div class="card-name-ja">市松</div>
+        <div class="card-hint">Checkered Pattern</div>
+      </div>
+    </a>
+
+    <!-- 桜 -->
+    <a class="pattern-card card-sakura" href="sakura.html">
+      <div class="icon-circle">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="gsa"><stop offset="0%" stop-color="#e878a0"/><stop offset="100%" stop-color="#c0306a"/></radialGradient>
+            <clipPath id="csa"><circle cx="50" cy="50" r="50"/></clipPath>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="url(#gsa)"/>
+          <g clip-path="url(#csa)" opacity="0.9">
+            <!-- sakura petals (5-petal flower) -->
+            <g transform="translate(50,50)">
+              <ellipse cx="0" cy="-20" rx="9" ry="14" fill="white" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-20" rx="9" ry="14" fill="white" transform="rotate(72)"/>
+              <ellipse cx="0" cy="-20" rx="9" ry="14" fill="white" transform="rotate(144)"/>
+              <ellipse cx="0" cy="-20" rx="9" ry="14" fill="white" transform="rotate(216)"/>
+              <ellipse cx="0" cy="-20" rx="9" ry="14" fill="white" transform="rotate(288)"/>
+              <circle cx="0" cy="0" r="5" fill="#e878a0"/>
+            </g>
+            <!-- small flowers -->
+            <g transform="translate(25,25)">
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(72)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(144)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(216)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(288)"/>
+            </g>
+            <g transform="translate(75,75)">
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(0)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(72)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(144)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(216)"/>
+              <ellipse cx="0" cy="-10" rx="5" ry="7" fill="white" opacity="0.7" transform="rotate(288)"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="card-text">
+        <div class="card-name-en">Sakura</div>
+        <div class="card-name-ja">桜</div>
+        <div class="card-hint">Cherry Blossom</div>
+      </div>
+    </a>
+
+  </div><!-- /pattern-list -->
+
+  <div class="bottom-area">
+    <img src="hanarin_smile.png" alt="Hanarin-chan" onerror="this.style.display='none'">
+    <p class="choose-hint">Choose the pattern that speaks to you ✦</p>
+  </div>
+
+  <footer>
+    <p>© Tatamiberry &nbsp;·&nbsp; Handmade with love 🌸</p>
+  </footer>
+</div>
+</body>
+</html>
