@@ -9,92 +9,117 @@
 html,body{min-height:100%;background:linear-gradient(160deg,#f0f8f0 0%,#f5fdf5 100%)}
 body{font-family:'Georgia','Noto Serif JP',serif;display:flex;justify-content:center}
 .page{width:100%;max-width:430px;min-height:100vh;position:relative;padding:0 0 80px;overflow:hidden}
+
+/* ── deco leaves ── */
 .petal{position:absolute;opacity:0.18;pointer-events:none;font-size:22px}
 .p1{top:4%;left:3%}.p2{top:8%;right:5%}.p3{top:18%;left:1%}
 .p4{bottom:22%;right:2%}.p5{bottom:12%;left:4%}.p6{top:35%;right:1%}
+
+/* ── header ── */
 header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px 10px}
 .logo{font-size:16px;font-weight:bold;color:#2e7a2e;letter-spacing:0.5px;display:flex;align-items:center;gap:6px}
 .logo span{font-size:20px}
 .brand-badge{background:#2e7a2e;color:white;font-size:11px;padding:4px 10px;border-radius:20px;letter-spacing:1px}
+
+/* ── subtitle ── */
 .subtitle{text-align:center;color:#90a890;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:6px 0 18px}
+
+/* ── pattern circle ── */
 .circle-wrap{display:flex;justify-content:center;margin:0 auto 20px;width:240px;height:240px}
 .circle-wrap svg{width:100%;height:100%;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.15))}
+
+/* ── pattern name ── */
 .name-en{text-align:center;font-size:38px;font-weight:bold;color:#2e7a2e;letter-spacing:1px;line-height:1.1}
 .name-ja{text-align:center;font-size:16px;color:#78a078;margin-top:4px;letter-spacing:3px}
+
+/* ── divider ── */
 .divider{text-align:center;margin:18px 0 16px;color:#2e7a2e;opacity:0.45;font-size:14px;letter-spacing:8px}
+
+/* ── content sections ── */
 .sections{padding:0 24px;display:flex;flex-direction:column;gap:14px}
 .section{background:white;border-radius:14px;padding:14px 18px;box-shadow:0 2px 12px rgba(0,0,0,0.06);position:relative}
 .label{display:inline-block;color:white;font-size:11px;font-weight:bold;padding:3px 12px;border-radius:20px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:9px}
 .lbl-meaning{background:#2e7a2e}
 .lbl-wish{background:#4e9a4e}
 .section p{font-size:15px;color:#48584a;line-height:1.7;font-style:italic}
+
+/* ── character ── */
 .character{position:relative;display:block;text-align:right;padding:10px 16px 0 0;margin-top:10px}
 .character img{width:140px;height:auto;background:transparent;display:block;margin-left:auto;mix-blend-mode:multiply}
+
+/* ── footer ── */
 footer{text-align:center;color:#a8b8a8;font-size:11px;margin-top:20px;letter-spacing:1px;padding:0 20px}
 .footer-logo{font-size:14px;font-weight:bold;color:#2e7a2e;opacity:0.7;margin-bottom:4px}
 </style>
 </head>
 <body>
 <div class="page">
+    <!-- deco leaves -->
       <div class="petal p1">🌿</div>
         <div class="petal p2">🍃</div>
           <div class="petal p3">🌱</div>
             <div class="petal p4">🌿</div>
               <div class="petal p5">🍃</div>
                 <div class="petal p6">🌿</div>
+
                   <header>
                       <div class="logo"><span>🍓</span>Tatamiberry</div>
                           <div class="brand-badge">Your Pattern</div>
                             </header>
+
                               <p class="subtitle">✦ Your Pattern Story ✦</p>
+
                                 <div class="circle-wrap">
                                     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
                                       <defs>
                                           <radialGradient id="g_kk" cx="40%" cy="35%" r="65%">
-                                                <stop offset="0%" stop-color="#4a9a4a"/>
-                                                      <stop offset="100%" stop-color="#1a5a1a"/>
+                                                <stop offset="0%" stop-color="#3d7a3d"/>
+                                                      <stop offset="100%" stop-color="#164a16"/>
                                                           </radialGradient>
                                                               <clipPath id="c_kk"><circle cx="150" cy="150" r="147"/></clipPath>
-                                                                  <pattern id="kk_pat" x="0" y="0" width="75" height="75" patternUnits="userSpaceOnUse">
-                                                                          <path d="M 37 0 C 60 10 62 28 37 37 C 12 46 14 63 37 75" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.88"/>
-                                                                                <path d="M 52 12 C 68 8 72 20 62 26 C 52 32 44 26 48 18 C 50 13 56 11 60 14" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.82"/>
-                                                                                      <path d="M 22 18 C 8 14 4 26 14 30 C 24 34 30 26 26 19 C 24 14 18 13 15 17" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.82"/>
-                                                                                            <path d="M 52 50 C 68 46 72 58 62 62 C 52 68 44 62 48 54 C 50 49 56 47 60 50" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.82"/>
-                                                                                                  <path d="M 22 57 C 8 52 4 64 14 68 C 24 72 30 64 26 57 C 24 52 18 51 15 55" stroke="white" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.82"/>
-                                                                                                        <ellipse cx="63" cy="14" rx="5" ry="3" transform="rotate(-30,63,14)" fill="white" opacity="0.6"/>
-                                                                                                              <ellipse cx="13" cy="17" rx="5" ry="3" transform="rotate(30,13,17)" fill="white" opacity="0.6"/>
-                                                                                                                    <ellipse cx="63" cy="51" rx="5" ry="3" transform="rotate(-30,63,51)" fill="white" opacity="0.6"/>
-                                                                                                                          <ellipse cx="13" cy="56" rx="5" ry="3" transform="rotate(30,13,56)" fill="white" opacity="0.6"/>
-                                                                                                                              </pattern>
-                                                                                                                                </defs>
-                                                                                                                                  <circle cx="150" cy="150" r="150" fill="#2a6a2a" opacity="0.4"/>
-                                                                                                                                    <circle cx="150" cy="150" r="147" fill="url(#g_kk)" stroke="#3a8a3a" stroke-width="3"/>
-                                                                                                                                      <g clip-path="url(#c_kk)">
-                                                                                                                                          <rect x="0" y="0" width="300" height="300" fill="url(#kk_pat)"/>
-                                                                                                                                            </g>
-                                                                                                                                                </svg>
-                                                                                                                                                  </div>
-                                                                                                                                                    <h1 class="name-en">Karakusa</h1>
-                                                                                                                                                      <p class="name-ja">唐草</p>
-                                                                                                                                                        <div class="divider">❀ &nbsp; ❀ &nbsp; ❀</div>
-                                                                                                                                                          <div class="sections">
-                                                                                                                                                              <div class="section">
-                                                                                                                                                                    <span class="label lbl-meaning">Meaning</span>
-                                                                                                                                                                          <p>This pattern depicts vines spreading and intertwining in all directions, and its tenacious vitality makes it an auspicious design symbolizing "longevity, prosperity, and abundant offspring."</p>
-                                                                                                                                                                              </div>
-                                                                                                                                                                                  <div class="section">
-                                                                                                                                                                                        <span class="label lbl-wish">Wish</span>
-                                                                                                                                                                                              <p>May your connections continue to grow and bring lasting happiness.</p>
-                                                                                                                                                                                                  </div>
-                                                                                                                                                                                                    </div>
-                                                                                                                                                                                                      <div class="character">
-                                                                                                                                                                                                          <img src="hanarin_smile.png" alt="花凜ちゃん">
-                                                                                                                                                                                                            </div>
-                                                                                                                                                                                                              <footer>
-                                                                                                                                                                                                                  <div class="footer-logo">🍓 Tatamiberry</div>
-                                                                                                                                                                                                                      © Tatamiberry. Made with love in Japan.
-                                                                                                                                                                                                                        </footer>
-                                                                                                                                                                                                                        </div>
-                                                                                                                                                                                                                        </body>
-                                                                                                                                                                                                                        </html>
-                                                                  </pattern>
+                                                                  <pattern id="kk_pat" x="0" y="0" width="90" height="90" patternUnits="userSpaceOnUse">
+                                                                        <path d="M 45 0 C 68 16 68 38 45 45 C 22 52 22 74 45 90" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                                                                              <path d="M 58 20 C 63 14 68 12 73 14" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                                                                                    <path d="M 73 14 A 12 12 0 0 1 85 26 A 12 12 0 0 1 73 38 A 12 12 0 0 1 61 26 A 7 7 0 0 1 73 22" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                                                                                          <path d="M 32 70 C 27 76 22 78 17 76" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                                                                                                <path d="M 17 76 A 12 12 0 0 0 5 64 A 12 12 0 0 0 17 52 A 12 12 0 0 0 29 64 A 7 7 0 0 0 17 68" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+                                                                                                      <ellipse cx="73" cy="22" rx="4.5" ry="2" transform="rotate(45,73,22)" fill="white" opacity="0.65"/>
+                                                                                                            <ellipse cx="17" cy="68" rx="4.5" ry="2" transform="rotate(225,17,68)" fill="white" opacity="0.65"/>
+                                                                                                                </pattern>
+                                                                                                                  </defs>
+                                                                                                                    <circle cx="150" cy="150" r="150" fill="#1e4a1e" opacity="0.5"/>
+                                                                                                                      <circle cx="150" cy="150" r="147" fill="url(#g_kk)" stroke="#2e6a2e" stroke-width="3"/>
+                                                                                                                        <g clip-path="url(#c_kk)">
+                                                                                                                            <rect x="0" y="0" width="300" height="300" fill="url(#kk_pat)"/>
+                                                                                                                              </g>
+                                                                                                                                  </svg>
+                                                                                                                                    </div>
+
+                                                                                                                                      <h1 class="name-en">Karakusa</h1>
+                                                                                                                                        <p class="name-ja">唐草</p>
+
+                                                                                                                                          <div class="divider">❀ &nbsp; ❀ &nbsp; ❀</div>
+
+                                                                                                                                            <div class="sections">
+                                                                                                                                                <div class="section">
+                                                                                                                                                      <span class="label lbl-meaning">Meaning</span>
+                                                                                                                                                            <p>This pattern depicts vines spreading and intertwining in all directions, and its tenacious vitality makes it an auspicious design symbolizing "longevity, prosperity, and abundant offspring."</p>
+                                                                                                                                                                </div>
+                                                                                                                                                                    <div class="section">
+                                                                                                                                                                          <span class="label lbl-wish">Wish</span>
+                                                                                                                                                                                <p>May your connections continue to grow and bring lasting happiness.</p>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                        <div class="character">
+                                                                                                                                                                                            <img src="hanarin_smile.png" alt="花凜ちゃん">
+                                                                                                                                                                                              </div>
+
+                                                                                                                                                                                                <footer>
+                                                                                                                                                                                                    <div class="footer-logo">🍓 Tatamiberry</div>
+                                                                                                                                                                                                        © Tatamiberry. Made with love in Japan.
+                                                                                                                                                                                                          </footer>
+                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                          </body>
+                                                                                                                                                                                                          </html>
+</div>
