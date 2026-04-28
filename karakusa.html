@@ -46,6 +46,7 @@ header{display:flex;align-items:center;justify-content:space-between;padding:18p
 /* ── character ── */
 .character{position:relative;display:block;text-align:right;padding:10px 16px 0 0;margin-top:10px}
 .character img{width:140px;height:auto;background:transparent;display:block;margin-left:auto;mix-blend-mode:multiply}
+.char-placeholder{display:inline-block;width:130px;height:160px;background:linear-gradient(135deg,#f0f8f0,#f5fdf5);border:2px dashed #2e7a2e;border-radius:12px;opacity:0.5;vertical-align:bottom;line-height:160px;text-align:center;font-size:11px;color:#2e7a2e}
 
 /* ── footer ── */
 footer{text-align:center;color:#a8b8a8;font-size:11px;margin-top:20px;letter-spacing:1px;padding:0 20px}
@@ -54,72 +55,50 @@ footer{text-align:center;color:#a8b8a8;font-size:11px;margin-top:20px;letter-spa
 </head>
 <body>
 <div class="page">
-    <!-- deco leaves -->
-      <div class="petal p1">🌿</div>
-        <div class="petal p2">🍃</div>
-          <div class="petal p3">🌱</div>
-            <div class="petal p4">🌿</div>
-              <div class="petal p5">🍃</div>
-                <div class="petal p6">🌿</div>
+  <!-- deco leaves -->
+  <div class="petal p1">🌿</div>
+  <div class="petal p2">🍃</div>
+  <div class="petal p3">🌱</div>
+  <div class="petal p4">🌿</div>
+  <div class="petal p5">🍃</div>
+  <div class="petal p6">🌿</div>
 
-                  <header>
-                      <div class="logo"><span>🍓</span>Tatamiberry</div>
-                          <div class="brand-badge">Your Pattern</div>
-                            </header>
+  <header>
+    <div class="logo"><span>🍓</span>Tatamiberry</div>
+    <div class="brand-badge">Your Pattern</div>
+  </header>
 
-                              <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ Your Pattern Story ✦</p>
 
-                                <div class="circle-wrap">
-                                    <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-                                      <defs>
-                                          <radialGradient id="g_kk" cx="40%" cy="35%" r="65%">
-                                                <stop offset="0%" stop-color="#3d7a3d"/>
-                                                      <stop offset="100%" stop-color="#164a16"/>
-                                                          </radialGradient>
-                                                              <clipPath id="c_kk"><circle cx="150" cy="150" r="147"/></clipPath>
-                                                                  <pattern id="kk_pat" x="0" y="0" width="90" height="90" patternUnits="userSpaceOnUse">
-                                                                        <path d="M 45 0 C 68 16 68 38 45 45 C 22 52 22 74 45 90" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                                                                              <path d="M 58 20 C 63 14 68 12 73 14" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
-                                                                                    <path d="M 73 14 A 12 12 0 0 1 85 26 A 12 12 0 0 1 73 38 A 12 12 0 0 1 61 26 A 7 7 0 0 1 73 22" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
-                                                                                          <path d="M 32 70 C 27 76 22 78 17 76" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
-                                                                                                <path d="M 17 76 A 12 12 0 0 0 5 64 A 12 12 0 0 0 17 52 A 12 12 0 0 0 29 64 A 7 7 0 0 0 17 68" stroke="white" stroke-width="2.8" fill="none" stroke-linecap="round"/>
-                                                                                                      <ellipse cx="73" cy="22" rx="4.5" ry="2" transform="rotate(45,73,22)" fill="white" opacity="0.65"/>
-                                                                                                            <ellipse cx="17" cy="68" rx="4.5" ry="2" transform="rotate(225,17,68)" fill="white" opacity="0.65"/>
-                                                                                                                </pattern>
-                                                                                                                  </defs>
-                                                                                                                    <circle cx="150" cy="150" r="150" fill="#1e4a1e" opacity="0.5"/>
-                                                                                                                      <circle cx="150" cy="150" r="147" fill="url(#g_kk)" stroke="#2e6a2e" stroke-width="3"/>
-                                                                                                                        <g clip-path="url(#c_kk)">
-                                                                                                                            <rect x="0" y="0" width="300" height="300" fill="url(#kk_pat)"/>
-                                                                                                                              </g>
-                                                                                                                                  </svg>
-                                                                                                                                    </div>
+  <div class="circle-wrap">
+    <img src="karakusa_icon.png" alt="唐草文様" style="width:100%;height:100%;border-radius:50%;object-fit:cover;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.15));">
+  </div>
 
-                                                                                                                                      <h1 class="name-en">Karakusa</h1>
-                                                                                                                                        <p class="name-ja">唐草</p>
+  <h1 class="name-en">Karakusa</h1>
+  <p class="name-ja">唐草</p>
 
-                                                                                                                                          <div class="divider">❀ &nbsp; ❀ &nbsp; ❀</div>
+  <div class="divider">❀ &nbsp; ❀ &nbsp; ❀</div>
 
-                                                                                                                                            <div class="sections">
-                                                                                                                                                <div class="section">
-                                                                                                                                                      <span class="label lbl-meaning">Meaning</span>
-                                                                                                                                                            <p>This pattern depicts vines spreading and intertwining in all directions, and its tenacious vitality makes it an auspicious design symbolizing "longevity, prosperity, and abundant offspring."</p>
-                                                                                                                                                                </div>
-                                                                                                                                                                    <div class="section">
-                                                                                                                                                                          <span class="label lbl-wish">Wish</span>
-                                                                                                                                                                                <p>May your connections continue to grow and bring lasting happiness.</p>
-                                                                                                                                                                                    </div>
-                                                                                                                                                                                      </div>
+  <div class="sections">
+    <div class="section">
+      <span class="label lbl-meaning">Meaning</span>
+      <p>This pattern depicts vines spreading and intertwining in all directions, and its tenacious vitality makes it an auspicious design symbolizing "longevity, prosperity, and abundant offspring."</p>
+    </div>
+    <div class="section">
+      <span class="label lbl-wish">Wish</span>
+      <p>May your connections continue to grow and bring lasting happiness.</p>
+    </div>
+  </div>
 
-                                                                                                                                                                                        <div class="character">
-                                                                                                                                                                                            <img src="hanarin_smile.png" alt="花凜ちゃん">
-                                                                                                                                                                                              </div>
+  <!-- 花凜ちゃん: hanarin_smile.png を同じフォルダに置いてください -->
+  <div class="character">
+    <img src="hanarin_smile.png" alt="花凜ちゃん">
+  </div>
 
-                                                                                                                                                                                                <footer>
-                                                                                                                                                                                                    <div class="footer-logo">🍓 Tatamiberry</div>
-                                                                                                                                                                                                        © Tatamiberry. Made with love in Japan.
-                                                                                                                                                                                                          </footer>
-                                                                                                                                                                                                          </div>
-                                                                                                                                                                                                          </body>
-                                                                                                                                                                                                          </html>
+  <footer>
+    <div class="footer-logo">🍓 Tatamiberry</div>
+    © Tatamiberry. Made with love in Japan.
+  </footer>
 </div>
+</body>
+</html>
