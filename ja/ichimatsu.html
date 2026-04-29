@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Ichimatsu | Tatamiberry</title>
+<title>市松 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f3f0fb 0%,#fdf5ff 100%)}
@@ -57,7 +57,7 @@ footer{text-align:center;color:#c0b0b8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -72,11 +72,11 @@ footer{text-align:center;color:#c0b0b8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/ichimatsu.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../ichimatsu.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -161,32 +161,32 @@ footer{text-align:center;color:#c0b0b8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The Ichimatsu pattern is a traditional Japanese checkered design made of alternating squares. Because the pattern continues without interruption, it symbolizes eternity, growth, prosperity, and the continuation of future generations.<span class="meaning-extra"><br><br>The name comes from a popular Kabuki actor of the Edo period, Sanogawa Ichimatsu, who wore this pattern and helped make it fashionable. Since then, it has been widely loved as a symbol of lasting success and longevity, appearing in kimono and everyday items.<br><br><strong>Main Meanings and Origins</strong><br><strong>Eternity and Continuity</strong> The uninterrupted checkered pattern represents a future that continues steadily and endlessly.<br><strong>Growth and Prosperity</strong> Its repeating structure symbolizes expansion, development, and long-lasting success.<br><strong>Historical Background</strong> The pattern has a long history, dating back to ancient times, and can be seen in historical textiles and cultural artifacts in Japan.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#7050b8">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>市松文様は、交互に並んだ正方形からなる伝統的な日本のチェック柄です。途切れることなく続く模様が、永遠・成長・繁栄・子孫繁栄を象徴しています。<span class="meaning-extra"><br><br>その名前は、江戸時代に活躍した人気歌舞伎役者・佐野川市松がこの文様を好んで着用し、流行させたことに由来しています。以来、着物や日常品に広く使われ、長きにわたって愛される柄となっています。<br><br><strong>主な意味と由来</strong><br><strong>永遠と継続</strong> 途切れないチェック模様が、着実に未来へ続いていくことを象徴しています。<br><strong>成長と繁栄</strong> 繰り返す構造が、発展・成長・長続きする成功を意味しています。<br><strong>歴史的背景</strong> 古くから存在する文様で、日本の歴史的な染織品や文化財にも見ることができます。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#7050b8">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May your future be filled with joy and success.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>あなたの未来が、喜びと成功で満ちあふれますように。</p>
     </div>
   </div>
 
   <!-- 花凜ちゃん: hanarin_smile.png を同じフォルダに置いてください -->
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

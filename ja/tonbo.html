@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Tonbo | Tatamiberry</title>
+<title>とんぼ | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f0f4fd 0%,#f4f7fd 100%)}
@@ -38,7 +38,7 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
 
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -52,14 +52,14 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/tonbo.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../tonbo.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
-    <img src="tonbo_icon.png" alt="とんぼ文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #4880d0, #1848a0)';this.parentElement.style.borderRadius='50%'">
+    <img src="../tonbo_icon.png" alt="とんぼ文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #4880d0, #1848a0)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Tonbo</h1>
@@ -69,22 +69,22 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p class="meaning-text">The dragonfly pattern is a traditional Japanese motif associated with victory and determination. Because dragonflies never move backward, they were admired by samurai during the Edo period and were called <em>kachimushi</em> ("victory insect"), symbolizing courage and success.<span class="meaning-extra"><br><br>During the Sengoku period, warlords used dragonfly designs on helmets and armor. The dragonfly is also seen as a symbol of a good harvest, as it appears in autumn and helps protect crops by eating harmful insects. Even today, this pattern is widely used in yukata, kimono, and traditional leather crafts.<br><br><strong>Kachimushi — Spirit of Never Retreating</strong><br>Since dragonflies only fly forward, samurai saw them as a symbol of victory and bravery.<br><br><strong>Symbol of a Good Harvest</strong><br>Dragonflies protect crops in autumn, making them a sign of abundance.<br><br><strong>Symbol of Japan</strong><br>In ancient times, Japan was called <em>Akitsushima</em> ("Dragonfly Island"), making the dragonfly a beloved symbol of the country.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2860a8">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>とんぼの文様は、勝利と決意を象徴する伝統的な日本の文様です。とんぼは後ろに飛ばないことから、江戸時代の武士たちに「勝ち虫」として崇められ、勇気と成功の象徴とされてきました。<span class="meaning-extra"><br><br>戦国時代には武将たちが兜や鎧にとんぼの意匠を用いました。秋に現れて農作物を害虫から守ることから、豊作のシンボルとも見なされています。現在も浴衣・着物・伝統的な革工芸などに広く使われています。<br><br><strong>勝ち虫 — 退かぬ魂</strong><br>とんぼは前にしか飛ばないことから、武士たちは勝利と勇敢さの象徴として大切にしました。<br><br><strong>豊作のシンボル</strong><br>秋のとんぼは農作物を守り、豊かな実りの証とされています。<br><br><strong>日本のシンボル</strong><br>古くは日本を「秋津島（あきつしま）」と呼んでいたほど、とんぼは日本を象徴する存在です。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2860a8">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May you have the courage to take on new challenges and achieve your dreams.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>新しい挑戦に勇気を持って臨み、夢を叶えられますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 
@@ -93,10 +93,10 @@ function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
     extra.style.display='inline';
-    btn.textContent='Read less ▲';
+    btn.textContent='閉じる ▲';
   }else{
     extra.style.display='none';
-    btn.textContent='Read more ▼';
+    btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

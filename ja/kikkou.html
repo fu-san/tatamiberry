@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Kikkou | Tatamiberry</title>
+<title>亀甲 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#fdf9f0 0%,#fdfbf5 100%)}
@@ -55,7 +55,7 @@ footer{text-align:center;color:#b8a898;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -69,15 +69,15 @@ footer{text-align:center;color:#b8a898;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/kikkou.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../kikkou.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
     <!-- kikkou_icon.png をCanvaで作成してこのフォルダに置いてください -->
-    <img src="kikkou_icon.png" alt="亀甲文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #d4a020, #8b6008)';this.parentElement.style.borderRadius='50%'">
+    <img src="../kikkou_icon.png" alt="亀甲文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #d4a020, #8b6008)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Kikkou</h1>
@@ -87,31 +87,31 @@ footer{text-align:center;color:#b8a898;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The kikkō (tortoiseshell) pattern is a traditional Japanese auspicious design based on the hexagonal shape of a turtle’s shell. It symbolizes longevity, prosperity, and enduring strength.<span class="meaning-extra"><br><br>Because the hexagon is one of the most stable and strong structures found in nature, the pattern has long been associated with protection, harmony in the home, and long life. Since ancient times, it has been widely used in family crests, kimono, architecture, and everyday objects.<br><br><strong>Main Meanings and Origins</strong><br><strong>Longevity and Prosperity</strong> Inspired by the saying “cranes live for a thousand years, turtles for ten thousand,” the turtle is a symbol of long life and good fortune.<br><strong>Protection and Strength</strong> The hexagonal form has been regarded as a protective symbol, believed to ward off misfortune and bring stability.<br><strong>Historical Background</strong> Introduced from China in ancient times, the pattern became popular among aristocrats in the Heian period and later among samurai.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#b87a08">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>亀甲文様は、亀の甲羅の六角形を模した伝統的な日本の吉祥文様です。長寿・繁栄・末永い強さを象徴しています。<span class="meaning-extra"><br><br>六角形は自然界で最も安定した強い構造のひとつであることから、家内安全・長寿・守護のシンボルとして長く親しまれてきました。古くから家紋・着物・建築・日常品に広く使われています。<br><br><strong>主な意味と由来</strong><br><strong>長寿と繁栄</strong> 「鶴は千年、亀は万年」という言葉に象徴されるように、亀は長寿と幸運のシンボルです。<br><strong>守護と強さ</strong> 六角形の形は魔除けのシンボルとして大切にされ、厄を払い安定をもたらすと信じられています。<br><strong>歴史的背景</strong> 中国から伝わったとされるこの文様は、平安時代に貴族の間で広まり、後に武士にも愛されました。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#b87a08">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May you be blessed with good health and a long, happy life.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>健やかで、長く幸せな人生に恵まれますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Matsu | Tatamiberry</title>
+<title>松 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f0f8f2 0%,#f4faf5 100%)}
@@ -38,7 +38,7 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
 
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -52,14 +52,14 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/matsu.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../matsu.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
-    <img src="matsu_icon.png" alt="松文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #4a9060, #1a5030)';this.parentElement.style.borderRadius='50%'">
+    <img src="../matsu_icon.png" alt="松文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #4a9060, #1a5030)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Matsu</h1>
@@ -69,22 +69,22 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p class="meaning-text">A traditional auspicious pattern in Japan, the pine tree symbolizes longevity, vitality, and enduring prosperity. As an evergreen, it is highly valued and often used for celebrations and special occasions.</p>
+      <span class="label lbl-meaning">意味</span>
+      <p>松は日本で古くから縁起の良い文様として愛されています。常緑の木として長寿・生命力・末永い繁栄を象徴し、お祝いの場や特別な機会に広く使われています。</p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May you grow strong and steady, and may your happiness last through the years.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>力強く、着実に成長し、あなたの幸せが長く続きますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 
@@ -93,10 +93,10 @@ function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
     extra.style.display='inline';
-    btn.textContent='Read less ▲';
+    btn.textContent='閉じる ▲';
   }else{
     extra.style.display='none';
-    btn.textContent='Read more ▼';
+    btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

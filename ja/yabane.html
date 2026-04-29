@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Yabane | Tatamiberry</title>
+<title>矢羽根 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f0faf8 0%,#f5fdfb 100%)}
@@ -55,7 +55,7 @@ footer{text-align:center;color:#a0b8b0;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -69,15 +69,15 @@ footer{text-align:center;color:#a0b8b0;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/yabane.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../yabane.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
     <!-- yabane_icon.png をCanvaで作成してこのフォルダに置いてください -->
-    <img src="yabane_icon.png" alt="矢羽根文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #3a9a8a, #145040)';this.parentElement.style.borderRadius='50%'">
+    <img src="../yabane_icon.png" alt="矢羽根文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #3a9a8a, #145040)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Yabane</h1>
@@ -87,31 +87,31 @@ footer{text-align:center;color:#a0b8b0;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The yabane (arrow feather) pattern is a traditional Japanese auspicious design associated with protection, determination, and moving forward. Because it comes from the feathers of hamaya (ceremonial arrows used to ward off evil), it is believed to bring protection and drive away negative energy.<span class="meaning-extra"><br><br>Since an arrow, once released, never returns, the pattern also carries wishes for lasting relationships and a strong, unwavering path in life. It is often used to symbolize progress, personal growth, and the achievement of one’s goals.<br><br><strong>Main Meanings and Origins</strong><br><strong>Protection and Good Fortune</strong> Derived from hamaya, the pattern is believed to ward off evil and bring good luck.<br><strong>Moving Forward Without Turning Back</strong> Like an arrow that never returns, it represents a steady path forward and enduring commitment.<br><strong>Growth and Achievement</strong> The straight movement of an arrow symbolizes reaching goals, personal growth, and success.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2a7a6a">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>矢羽根文様は、守護・決意・前進を象徴する伝統的な日本の吉祥文様です。邪気を払う破魔矢の羽根に由来することから、守護と厄除けの力があると信じられています。<span class="meaning-extra"><br><br>一度放たれた矢は戻らないことから、末永い縁や揺るぎない人生の道への願いも込められています。前進・成長・目標達成を象徴する文様として使われることが多いです。<br><br><strong>主な意味と由来</strong><br><strong>守護と幸運</strong> 破魔矢に由来し、邪気を払い幸運をもたらすとされています。<br><strong>前へ進む・振り返らない</strong> 戻ることのない矢のように、揺るぎない道を着実に進む強さを表しています。<br><strong>成長と達成</strong> 矢の真っ直ぐな動きが、目標への到達・自己成長・成功を象徴しています。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2a7a6a">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May you move forward with confidence toward your dreams and goals.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>自信を持って、夢と目標に向かって前進できますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Asanoha | Tatamiberry</title>
+<title>麻の葉 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#edf7ef 0%,#f5fcf0 100%)}
@@ -57,7 +57,7 @@ footer{text-align:center;color:#c0b0b8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -72,11 +72,11 @@ footer{text-align:center;color:#c0b0b8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/asanoha.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../asanoha.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
@@ -1799,32 +1799,32 @@ footer{text-align:center;color:#c0b0b8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The Asanoha (hemp leaf) pattern is a traditional Japanese design symbolizing healthy growth and protection from evil.<span class="meaning-extra"> Hemp plants are known for their fast and strong growth, reaching up to 4 meters in just a few months, which inspired wishes for children to grow up strong and healthy.<br><br>The pattern is formed by repeating geometric hexagons. During the Edo period, it was commonly used for baby clothing and undergarments, and it remains popular today for birth celebrations and kimono designs, including modern references such as characters like Nezuko from Demon Slayer.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#5a9e6a">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>麻の葉文様は、健やかな成長と魔除けを象徴する伝統的な日本の文様です。<span class="meaning-extra"> 麻の植物は数ヶ月で4メートルにも達するほど力強く成長することから、子どもが丈夫に育つようにという願いが込められています。<br><br>六角形を繰り返した幾何学模様で構成されています。江戸時代には赤ちゃんの産着や肌着によく使われ、現在も出産祝いや着物のデザインとして愛され続けています。鬼滅の刃の禰豆子のような現代的な描写にも登場します。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#5a9e6a">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>★ May my child grow up healthy and strong...　★ May they be protected from illness and misfortune...</p>
+      <span class="label lbl-wish">願い</span>
+      <p>あなたが自分らしく、力強く輝けますように。</p>
     </div>
   </div>
 
   <!-- 花凜ちゃん: hanarin_smile.png を同じフォルダに置いてください -->
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

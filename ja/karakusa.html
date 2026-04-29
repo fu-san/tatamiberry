@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Karakusa | Tatamiberry</title>
+<title>唐草 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f0f8f0 0%,#f5fdf5 100%)}
@@ -56,7 +56,7 @@ footer{text-align:center;color:#a8b8a8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -71,14 +71,14 @@ footer{text-align:center;color:#a8b8a8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/karakusa.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../karakusa.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
-    <img src="karakusa_icon.png" alt="唐草文様" style="width:100%;height:100%;border-radius:50%;object-fit:cover;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.15));">
+    <img src="../karakusa_icon.png" alt="唐草文様" style="width:100%;height:100%;border-radius:50%;object-fit:cover;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.15));">
   </div>
 
   <h1 class="name-en">Karakusa</h1>
@@ -88,32 +88,32 @@ footer{text-align:center;color:#a8b8a8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The karakusa (arabesque vine) pattern is a traditional Japanese auspicious design symbolizing longevity, continuity, and the growth of future generations. The endlessly extending vines represent strong vitality and the unbroken flow of life.<span class="meaning-extra"><br><br>The word “vine” is also associated with the idea of “many” and “continuity,” expressing wishes for lasting prosperity and the flourishing of family lines. It is considered a lucky motif believed to ward off misfortune and bring abundance.<br><br><strong>Main Meanings and Origins</strong><br><strong>Longevity and Continuity</strong> The ever-growing vines symbolize the continuity of life and strong life force.<br><strong>Enduring Prosperity</strong> The spreading vines represent the idea of something continuing endlessly, symbolizing lasting success and family prosperity.<br><strong>Good Fortune and Protection</strong> Karakusa is regarded as an auspicious pattern that brings good fortune and protects against misfortune.<br><strong>Vitality and Infinite Possibility</strong> The vines grow freely and overcome obstacles, symbolizing strength, vitality, and endless potential.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2e7a2e">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>唐草文様は、長寿・継続・子孫繁栄を象徴する伝統的な日本の吉祥文様です。どこまでも伸び続けるつるが、力強い生命力と命の流れを表しています。<span class="meaning-extra"><br><br>「つる」という言葉は「多い」「続く」という意味とも結びつき、繁栄と家系の繁栄への願いを込めています。邪気を払い、豊かさをもたらす縁起の良い文様とされています。<br><br><strong>主な意味と由来</strong><br><strong>長寿と継続</strong> 伸び続けるつるが、命の連続性と力強い生命力を象徴しています。<br><strong>末永い繁栄</strong> 広がり続けるつるが、長く続く成功と家系の繁栄を表しています。<br><strong>幸運と守護</strong> 唐草文様は、幸運をもたらし、邪気から守る縁起の良い文様とされています。<br><strong>生命力と無限の可能性</strong> つるは自由に育ち、障害を乗り越えることから、強さ・活力・無限の可能性を象徴しています。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2e7a2e">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May your connections continue to grow and bring lasting happiness.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>あなたのご縁が育まれ続け、長く続く幸せをもたらしますように。</p>
     </div>
   </div>
 
   <!-- 花凜ちゃん: hanarin_smile.png を同じフォルダに置いてください -->
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

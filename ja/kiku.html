@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Kiku | Tatamiberry</title>
+<title>菊 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#fdfaf0 0%,#fdfcf5 100%)}
@@ -55,7 +55,7 @@ footer{text-align:center;color:#b8b098;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -69,15 +69,15 @@ footer{text-align:center;color:#b8b098;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/kiku.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../kiku.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
     <!-- kiku_icon.png をCanvaで作成してこのフォルダに置いてください -->
-    <img src="kiku_icon.png" alt="菊文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #d4aa20, #8b6c10)';this.parentElement.style.borderRadius='50%'">
+    <img src="../kiku_icon.png" alt="菊文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #d4aa20, #8b6c10)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Kiku</h1>
@@ -87,31 +87,31 @@ footer{text-align:center;color:#b8b098;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The kiku (chrysanthemum) pattern is one of Japan’s most prestigious auspicious designs. It symbolizes longevity, good health, and protection from evil, as well as a sense of nobility and inner balance.<span class="meaning-extra"><br><br>Because of its elegant and timeless nature, it is used throughout the year in kimono, obi, and traditional ceramics such as Imari ware.<br><br><strong>Main Meanings and Origins</strong><br><strong>Longevity and Good Health</strong> The chrysanthemum has long been associated with long life and well-being.<br><strong>Protection and Purification</strong> It is believed to ward off negative energy and bring a sense of clarity and calm.<br><strong>Nobility and Harmony</strong> Its refined form represents dignity, stability, and balance of mind and body.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#a87808">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>菊文様は、日本で最も格式高い吉祥文様のひとつです。長寿・健康・魔除けを象徴するとともに、気品と内なる調和を表しています。<span class="meaning-extra"><br><br>その気品ある不変の美しさから、一年を通して着物・帯・伊万里焼などの伝統的な陶磁器に使われています。<br><br><strong>主な意味と由来</strong><br><strong>長寿と健康</strong> 菊は古くから長寿と健康のシンボルとして大切にされてきました。<br><strong>守護と浄化</strong> 邪気を払い、清らかで穏やかな心をもたらすと信じられています。<br><strong>気品と調和</strong> その洗練された形が、品格・安定・心身のバランスを表しています。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#a87808">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May happiness continue in your life and your heart be always fulfilled.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>幸せがあなたの人生に続き、心がいつも満たされていますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

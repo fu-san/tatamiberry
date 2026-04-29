@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Ryusui | Tatamiberry</title>
+<title>流水 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f0fafa 0%,#f4fbfc 100%)}
@@ -38,7 +38,7 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
 
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -52,14 +52,14 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/ryusui.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../ryusui.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
-    <img src="ryuusui_icon.png" alt="流水文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #40a0b8, #106878)';this.parentElement.style.borderRadius='50%'">
+    <img src="../ryuusui_icon.png" alt="流水文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #40a0b8, #106878)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Ryusui</h1>
@@ -69,22 +69,22 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p class="meaning-text">The flowing water pattern is a classic Japanese auspicious motif that represents gently moving, winding streams. It has long been associated with purification, protection, and wishes for longevity.<span class="meaning-extra"><br><br>Because water flows continuously without stopping, it also symbolizes harmony in relationships and lasting prosperity. This elegant design is widely used throughout the year in kimono, yukata, and various traditional items.<br><br><strong>Purification and Protection</strong><br>Water is seen as a symbol of cleansing, believed to wash away impurities, misfortune, and negative energy.<br><br><strong>Eternity and Prosperity</strong><br>The uninterrupted flow of water represents a life of longevity, harmonious relationships, and enduring happiness.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#207890">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>流水文様は、ゆったりと流れる曲線的な川の動きを表した、日本の古典的な吉祥文様です。古くから浄化・守護・長寿への願いと結びついてきました。<span class="meaning-extra"><br><br>水が絶えず流れ続けるように、人との縁の調和と末永い繁栄をも象徴しています。この優雅なデザインは、着物・浴衣・さまざまな伝統工芸品に一年を通じて幅広く使われています。<br><br><strong>浄化と守護</strong><br>水は穢れ・厄・邪気を洗い流す浄化のシンボルとされています。<br><br><strong>永遠と繁栄</strong><br>途切れることのない水の流れが、長寿・調和ある人間関係・続く幸せを表しています。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#207890">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May your life flow gently and freely, and may every change lead you to something beautiful.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>あなたの人生が穏やかに自由に流れ、どんな変化もあなたを美しいものへと導きますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 
@@ -93,10 +93,10 @@ function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
     extra.style.display='inline';
-    btn.textContent='Read less ▲';
+    btn.textContent='閉じる ▲';
   }else{
     extra.style.display='none';
-    btn.textContent='Read more ▼';
+    btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

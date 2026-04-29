@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Mizutama | Tatamiberry</title>
+<title>水玉 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#f0f6fd 0%,#f4f8fd 100%)}
@@ -38,7 +38,7 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
 
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -52,14 +52,14 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/mizutama.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../mizutama.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
-    <img src="mizutama_icon.png" alt="水玉文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #4890d0, #1860a0)';this.parentElement.style.borderRadius='50%'">
+    <img src="../mizutama_icon.png" alt="水玉文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #4890d0, #1860a0)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Mizutama</h1>
@@ -69,22 +69,22 @@ footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p class="meaning-text">The water pattern is a traditional Japanese auspicious motif inspired by flowing water, such as rivers, waves, and whirlpools. Since ancient times, water has been believed to have the power to cleanse and purify, washing away impurities, misfortune, and hardship.<span class="meaning-extra"><br><br>Because of this, the pattern carries wishes for purity, protection, and lasting happiness. It is commonly used in kimono, obi, and wrapping cloths (furoshiki).<br><br><strong>Purification and Protection</strong><br>Water is believed to cleanse away impurities and misfortune, symbolizing protection and spiritual purity.<br><br><strong>Continuous Flow of Happiness</strong><br>Just as flowing water never stagnates, it represents a life that remains pure and a happiness that continues without interruption.<br><br><strong>Vitality and Life Force</strong><br>Water, the source of all life, symbolizes strong vitality and the energy of life.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2870a8">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>水玉文様は、川・波・渦などの流れる水にインスピレーションを得た伝統的な日本の吉祥文様です。古くから水には穢れ・厄災・苦しみを洗い流す浄化の力があると信じられてきました。<span class="meaning-extra"><br><br>そのため、この文様には清らかさ・守護・永続する幸せへの願いが込められています。着物・帯・ふろしきなどに広く使われています。<br><br><strong>浄化と守護</strong><br>水は穢れや厄を清める力があると信じられ、守護と心の清らかさを象徴しています。<br><br><strong>幸せの連続</strong><br>流れる水が決して淀まないように、純粋なまま途切れることなく幸せが続くことを表しています。<br><br><strong>生命力と活力</strong><br>すべての命の源である水は、強い生命力と生きるエネルギーを象徴しています。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#2870a8">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May your life be filled with small moments of happiness, gently connected one by one.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>あなたの人生が、小さな幸せでいっぱいになりますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 
@@ -93,10 +93,10 @@ function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
     extra.style.display='inline';
-    btn.textContent='Read less ▲';
+    btn.textContent='閉じる ▲';
   }else{
     extra.style.display='none';
-    btn.textContent='Read more ▼';
+    btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){

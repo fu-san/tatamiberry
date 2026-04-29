@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-<title>Uroko | Tatamiberry</title>
+<title>鱗 | Tatamiberry</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{min-height:100%;background:linear-gradient(160deg,#fdf0f4 0%,#fdf5f8 100%)}
@@ -55,7 +55,7 @@ footer{text-align:center;color:#b8a0a8;font-size:11px;margin-top:20px;letter-spa
 .read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
 .read-more-btn:hover{opacity:0.7}
 .meaning-extra{display:none}
-.lang-btn-ja{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px;margin-right:6px}
+.lang-btn{font-size:11px;color:#888;text-decoration:none;padding:4px 10px;border:1px solid #ddd;border-radius:20px;letter-spacing:0.5px}
 </style>
 </head>
 <body>
@@ -69,15 +69,15 @@ footer{text-align:center;color:#b8a0a8;font-size:11px;margin-top:20px;letter-spa
 
   <header>
     <div class="logo"><span>🍓</span>Tatamiberry</div>
-    <a class="lang-btn-ja" href="ja/uroko.html">🇯🇵 日本語</a>
-    <div class="brand-badge">Your Pattern</div>
+    <a class="lang-btn" href="../uroko.html">🇬🇧 English</a>
+    <div class="brand-badge">あなたの文様</div>
   </header>
 
-  <p class="subtitle">✦ Your Pattern Story ✦</p>
+  <p class="subtitle">✦ あなたの文様ストーリー ✦</p>
 
   <div class="circle-wrap">
     <!-- uroko_icon.png をCanvaで作成してこのフォルダに置いてください -->
-    <img src="uroko_icon.png" alt="鱗文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #e07090, #8a3060)';this.parentElement.style.borderRadius='50%'">
+    <img src="../uroko_icon.png" alt="鱗文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #e07090, #8a3060)';this.parentElement.style.borderRadius='50%'">
   </div>
 
   <h1 class="name-en">Uroko</h1>
@@ -87,31 +87,31 @@ footer{text-align:center;color:#b8a0a8;font-size:11px;margin-top:20px;letter-spa
 
   <div class="sections">
     <div class="section">
-      <span class="label lbl-meaning">Meaning</span>
-      <p>The uroko (scale) pattern is a traditional Japanese geometric design made of repeating triangles. Inspired by the scales of fish and snakes, it is considered an auspicious motif symbolizing protection, the warding off of misfortune, and renewal.<span class="meaning-extra"><br><br>Because snakes shed their skin, the pattern is also associated with transformation and rebirth—representing the ability to leave the past behind and begin anew. For this reason, it has long been used in kimono, undergarments, armor, and traditional theater costumes.<br><br><strong>Main Meanings and Origins</strong><br><strong>Protection and Warding Off Evil</strong> The scale-like pattern is believed to protect against misfortune and negative energy.<br><strong>Renewal and Transformation</strong> Inspired by the shedding of a snake’s skin, it symbolizes rebirth, change, and new beginnings.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#c04870">Read more ▼</button></p>
+      <span class="label lbl-meaning">意味</span>
+      <p>鱗文様は、三角形を繰り返して構成される伝統的な日本の幾何学文様です。魚やヘビの鱗をイメージしており、守護・厄除け・再生を象徴する縁起の良い文様とされています。<span class="meaning-extra"><br><br>ヘビが脱皮することから、この文様は変容と再生とも結びついており、過去を手放し新たに生まれ変わる力を表しています。着物・下着・鎧・伝統芸能の衣装など、幅広く用いられてきました。<br><br><strong>主な意味と由来</strong><br><strong>守護と厄除け</strong> 鱗に似たこの文様は、邪気を払い、悪いことから守ると信じられています。<br><strong>再生と変容</strong> ヘビの脱皮にインスピレーションを受け、生まれ変わり・変化・新しいはじまりを象徴しています。</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#c04870">続きを読む ▼</button></p>
     </div>
     <div class="section">
-      <span class="label lbl-wish">Wish</span>
-      <p>May you be protected from harm and blessed with a bright new future.</p>
+      <span class="label lbl-wish">願い</span>
+      <p>あなたが守られ、明るい新しい未来に恵まれますように。</p>
     </div>
   </div>
 
   <div class="character">
-    <img src="hanarin_smile.png" alt="花凜ちゃん">
+    <img src="../hanarin_smile.png" alt="花凜ちゃん">
   </div>
 
   <footer>
     <div class="footer-logo">🍓 Tatamiberry</div>
-    © Tatamiberry. Made with love in Japan.
+    © Tatamiberry. 日本から愛を込めて。
   </footer>
 </div>
 <script>
 function toggleMeaning(btn){
   var extra=btn.previousElementSibling;
   if(extra.style.display==='none'||extra.style.display===''){
-    extra.style.display='inline';btn.textContent='Read less ▲';
+    extra.style.display='inline';btn.textContent='閉じる ▲';
   }else{
-    extra.style.display='none';btn.textContent='Read more ▼';
+    extra.style.display='none';btn.textContent='続きを読む ▼';
   }
 }
 window.addEventListener('DOMContentLoaded',function(){
