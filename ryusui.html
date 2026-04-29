@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<title>Ryusui | Tatamiberry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{min-height:100%;background:linear-gradient(160deg,#f0fafa 0%,#f4fbfc 100%)}
+body{font-family:'Georgia','Noto Serif JP',serif;display:flex;justify-content:center}
+.page{width:100%;max-width:430px;min-height:100vh;position:relative;padding:0 0 80px;overflow:hidden}
+.petal{position:absolute;opacity:0.18;pointer-events:none;font-size:22px}
+.p1{top:4%;left:3%}.p2{top:8%;right:5%}.p3{top:18%;left:1%}
+.p4{bottom:22%;right:2%}.p5{bottom:12%;left:4%}.p6{top:35%;right:1%}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 22px 10px}
+.logo{font-size:16px;font-weight:bold;color:#207890;letter-spacing:0.5px;display:flex;align-items:center;gap:6px}
+.logo span{font-size:20px}
+.brand-badge{background:#207890;color:white;font-size:11px;padding:4px 10px;border-radius:20px;letter-spacing:1px}
+.subtitle{text-align:center;color:#4098a8;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:6px 0 18px}
+.circle-wrap{display:flex;justify-content:center;margin:0 auto 20px;width:240px;height:240px}
+.circle-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;filter:drop-shadow(0 6px 18px rgba(0,0,0,0.15))}
+.name-en{text-align:center;font-size:38px;font-weight:bold;color:#207890;letter-spacing:1px;line-height:1.1}
+.name-ja{text-align:center;font-size:16px;color:#4098a8;margin-top:4px;letter-spacing:3px}
+.divider{text-align:center;margin:18px 0 16px;color:#207890;opacity:0.45;font-size:14px;letter-spacing:8px}
+.sections{padding:0 24px;display:flex;flex-direction:column;gap:14px}
+.section{background:white;border-radius:14px;padding:14px 18px;box-shadow:0 2px 12px rgba(0,0,0,0.06)}
+.label{display:inline-block;color:white;font-size:11px;font-weight:bold;padding:3px 12px;border-radius:20px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:9px}
+.lbl-meaning{background:#207890}
+.lbl-wish{background:#4098a8}
+.section p{font-size:15px;color:#585048;line-height:1.7;font-style:italic}
+.character{position:relative;display:block;text-align:right;padding:10px 16px 0 0;margin-top:10px}
+.character img{width:140px;height:auto;background:transparent;display:block;margin-left:auto;mix-blend-mode:multiply}
+footer{text-align:center;color:#b8b0a8;font-size:11px;margin-top:20px;letter-spacing:1px;padding:0 20px}
+.footer-logo{font-size:14px;font-weight:bold;color:#207890;opacity:0.7;margin-bottom:4px}
+
+/* ── read more ── */
+.read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
+.read-more-btn:hover{opacity:0.7}
+.meaning-extra{display:none}
+
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="petal p1">🌊</div>
+  <div class="petal p2">🌿</div>
+  <div class="petal p3">💧</div>
+  <div class="petal p4">🌊</div>
+  <div class="petal p5">🌿</div>
+  <div class="petal p6">💧</div>
+
+  <header>
+    <div class="logo"><span>🍓</span>Tatamiberry</div>
+    <div class="brand-badge">Your Pattern</div>
+  </header>
+
+  <p class="subtitle">✦ Your Pattern Story ✦</p>
+
+  <div class="circle-wrap">
+    <img src="ryuusui_icon.png" alt="流水文様" onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #40a0b8, #106878)';this.parentElement.style.borderRadius='50%'">
+  </div>
+
+  <h1 class="name-en">Ryusui</h1>
+  <p class="name-ja">流水</p>
+
+  <div class="divider">∿ &nbsp; ∿ &nbsp; ∿</div>
+
+  <div class="sections">
+    <div class="section">
+      <span class="label lbl-meaning">Meaning</span>
+      <p class="meaning-text">The flowing water pattern is a classic Japanese auspicious motif that represents gently moving, winding streams. It has long been associated with purification, protection, and wishes for longevity.<span class="meaning-extra"><br><br>Because water flows continuously without stopping, it also symbolizes harmony in relationships and lasting prosperity. This elegant design is widely used throughout the year in kimono, yukata, and various traditional items.<br><br><strong>Purification and Protection</strong><br>Water is seen as a symbol of cleansing, believed to wash away impurities, misfortune, and negative energy.<br><br><strong>Eternity and Prosperity</strong><br>The uninterrupted flow of water represents a life of longevity, harmonious relationships, and enduring happiness.</span><button class="read-more-btn" onclick="toggleMeaning(this)" style="color:#207890">Read more ▼</button></p>
+    </div>
+    <div class="section">
+      <span class="label lbl-wish">Wish</span>
+      <p>May your life flow gently and freely, and may every change lead you to something beautiful.</p>
+    </div>
+  </div>
+
+  <div class="character">
+    <img src="hanarin_smile.png" alt="花凜ちゃん">
+  </div>
+
+  <footer>
+    <div class="footer-logo">🍓 Tatamiberry</div>
+    © Tatamiberry. Made with love in Japan.
+  </footer>
+</div>
+
+<script>
+function toggleMeaning(btn){
+  var extra=btn.previousElementSibling;
+  if(extra.style.display==='none'||extra.style.display===''){
+    extra.style.display='inline';
+    btn.textContent='Read less ▲';
+  }else{
+    extra.style.display='none';
+    btn.textContent='Read more ▼';
+  }
+}
+window.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.meaning-extra').forEach(function(el){
+    var btn=el.nextElementSibling;
+    if(btn&&btn.classList.contains('read-more-btn')){
+      btn.style.display='block';
+    }
+  });
+});
+</script>
+
+</body>
+</html>

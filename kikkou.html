@@ -50,6 +50,11 @@ header{display:flex;align-items:center;justify-content:space-between;padding:18p
 /* ── footer ── */
 footer{text-align:center;color:#b8a898;font-size:11px;margin-top:20px;letter-spacing:1px;padding:0 20px}
 .footer-logo{font-size:14px;font-weight:bold;color:#b87a08;opacity:0.7;margin-bottom:4px}
+
+/* ── read more ── */
+.read-more-btn{display:none;background:none;border:none;font-size:13px;font-weight:bold;cursor:pointer;padding:5px 0 0;letter-spacing:0.5px;font-family:inherit;text-decoration:underline}
+.read-more-btn:hover{opacity:0.7}
+.meaning-extra{display:none}
 </style>
 </head>
 <body>
@@ -98,5 +103,21 @@ footer{text-align:center;color:#b8a898;font-size:11px;margin-top:20px;letter-spa
     © Tatamiberry. Made with love in Japan.
   </footer>
 </div>
+<script>
+function toggleMeaning(btn){
+  var extra=btn.previousElementSibling;
+  if(extra.style.display==='none'||extra.style.display===''){
+    extra.style.display='inline';btn.textContent='Read less ▲';
+  }else{
+    extra.style.display='none';btn.textContent='Read more ▼';
+  }
+}
+window.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('.meaning-extra').forEach(function(el){
+    var btn=el.nextElementSibling;
+    if(btn&&btn.classList.contains('read-more-btn')){btn.style.display='block';}
+  });
+});
+</script>
 </body>
 </html>
